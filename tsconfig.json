@@ -17,7 +17,15 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "ion-modal-launcher": [
+        "dist/ion-modal-launcher"
+      ],
+      "ion-modal-launcher/*": [
+        "dist/ion-modal-launcher/*"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
