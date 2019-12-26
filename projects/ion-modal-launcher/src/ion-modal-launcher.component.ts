@@ -11,7 +11,8 @@ export interface ModalLauncherOptions {
 
 @Component({
     selector: 'ion-modal-launcher',
-    template: ''
+    template: '',
+    styles: [':host { display: none !important; }']
 })
 export class IonModalLauncherComponent implements OnInit, OnDestroy {
     private _observables: Observable<ModalLauncherOptions>[];
