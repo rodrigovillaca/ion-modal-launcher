@@ -1,5 +1,7 @@
 # ion-modal-launcher
 
+Ionic 4 component that subscribe to a list of observables and display an ion-modal when each observable emits a value.
+
 - [ion-modal-launcher](#ion-modal-launcher)
   - [Install](#install)
   - [Usage](#usage)
@@ -9,7 +11,6 @@
   - [Todo](#todo)
 
 
-This is an Ionic 4 component that subscribe to a list of observables and display an ion-modal when the observable emits a value.
 
 It can be used to trigger modals from different observables, very useful if you need to display a modal from a service or a route guard for example (or anything injected at root).
 
