@@ -29,6 +29,7 @@
     "testem.log": "explorerExcludedFiles",
     "typings": "explorerExcludedFiles",
     ".DS_Store": "explorerExcludedFiles",
-    "Thumbs.db": "explorerExcludedFiles"
+    "Thumbs.db": "explorerExcludedFiles",
+    ".vscode/settings.json": "explorerExcludedFiles"
   }
 }

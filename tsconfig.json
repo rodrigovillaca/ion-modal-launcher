@@ -1,34 +1,33 @@
 {
-  "compileOnSave": false,
-  "compilerOptions": {
-    "baseUrl": "./",
-    "outDir": "./dist/out-tsc",
-    "sourceMap": true,
-    "declaration": false,
-    "downlevelIteration": true,
-    "experimentalDecorators": true,
-    "module": "esnext",
-    "moduleResolution": "node",
-    "importHelpers": true,
-    "target": "es2015",
-    "typeRoots": [
-      "node_modules/@types"
-    ],
-    "lib": [
-      "es2018",
-      "dom"
-    ],
-    "paths": {
-      "ion-modal-launcher": [
-        "dist/ion-modal-launcher"
-      ],
-      "ion-modal-launcher/*": [
-        "dist/ion-modal-launcher/*"
-      ]
-    }
-  },
-  "angularCompilerOptions": {
-    "fullTemplateTypeCheck": true,
-    "strictInjectionParameters": true
-  }
+    "compileOnSave": false,
+    "compilerOptions": {
+        "baseUrl": "./",
+        "outDir": "./dist/out-tsc",
+        "sourceMap": true,
+        "declaration": true,
+        "downlevelIteration": true,
+        "inlineSources": true,
+        "types": [],
+
+        "experimentalDecorators": true,
+        "module": "esnext",
+        "moduleResolution": "node",
+        "importHelpers": true,
+        "target": "es2015",
+        "typeRoots": ["node_modules/@types"],
+        "lib": ["es2018", "dom"],
+        "paths": {
+            "ion-modal-launcher": ["dist/ion-modal-launcher"],
+            "ion-modal-launcher/*": ["dist/ion-modal-launcher/*"]
+        }
+    },
+    "angularCompilerOptions": {
+        "annotateForClosureCompiler": true,
+        "skipTemplateCodegen": true,
+        "strictMetadataEmit": true,
+        "fullTemplateTypeCheck": true,
+        "strictInjectionParameters": true,
+        "enableResourceInlining": true
+    },
+    "exclude": ["src/test.ts", "**/*.spec.ts"]
 }

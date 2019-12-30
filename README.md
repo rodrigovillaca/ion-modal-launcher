@@ -7,7 +7,6 @@ Ionic 4 component that subscribe to a list of observables and display an ion-mod
   - [Usage](#usage)
     - [template](#template)
     - [obsevables parameter](#obsevables-parameter)
-  - [Contributing](#contributing)
   - [Todo](#todo)
 
 
@@ -100,14 +99,6 @@ this.modalObservables = [loginObservable];
 I've been using it for a similar case as the above, the authentication guard triggers an next value on the `this.authentication.forbidden` observable and this displays the login modal as we didn't want the page redirection behavior the login screen on this specific app.
 
 It can be used to trigger modals from any kind of observable, very useful if you need to display a modal from a service or a route guard for example, you add an observable on your service, pass it to the ion-modal-launcher through app.componet as the example above.
-
-## Contributing
-
-If you are contributing with the project you should build the library with: 
-```
-npm run build
-```
-This will copy the README file so it is update on NPM. Any further scripts required on future versions will be called by this command.
 
 
 ## Todo
